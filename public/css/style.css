@@ -7,7 +7,7 @@ body, * {
 }
 
 h1 {
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 .cards {
@@ -46,13 +46,40 @@ label, input {
     font-size: inherit;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
     padding: .25rem;
 }
 
-input[type="submit"] {
+input[type="submit"],
+button[type="submit"] {
     background-color: lightgrey;
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    margin: 2rem 0;
+    max-width: 500px;
+    border-collapse: collapse;
+    border: 1px solid black;
+    th {
+        text-align: left;
+        padding: 3px 5px;
+        border-bottom: 3px double black;
+        background-color: lightgrey;
+    }
+    td {
+        padding: 3px 5px;
+    }
+}
+
+form {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    border: 1px solid black;
+    max-width: 500px;
 }

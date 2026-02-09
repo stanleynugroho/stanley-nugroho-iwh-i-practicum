@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add a New Pet
+        a(href="/") Return to the homepage
+        form(method="POST" action="/update-cobj")
+            div
+                label(for="name") Name:
+                input(type="text" id="name" name="name" required)
+            div
+                label(for="type") Type:
+                input(type="text" id="type" name="type" required)
+            div
+                label(for="age") Age:
+                input(type="number" id="age" name="age" required)
+            div
+                button(type="submit") Add Pet
